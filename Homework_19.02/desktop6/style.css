@@ -1,0 +1,28 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.empty_items{
+   display: flex;
+   justify-content: space-around;
+}
+
+.item{
+   max-width: 250px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+
+   font-size: 12px;
+   
+}
+
+.empty{
+   width: 249px;
+   height: 383px;
+   background: rgba(217, 217, 217, 1);
+}
+
