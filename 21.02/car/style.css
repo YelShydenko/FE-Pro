@@ -1,0 +1,44 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.car{
+   width: 183px;
+   height: 80px;
+   background: rgba(0, 43, 194, 1);
+   position: relative;
+   margin: 10% auto;
+}
+
+.car::before{
+   position: absolute;
+   content: '';
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: rgba(0, 109, 50, 1);
+   left: -9px;
+   bottom: -20px;
+}
+
+.car::after{
+   position: absolute;
+   content: '';
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: rgba(0, 255, 117, 1);
+   right: -9px;
+   bottom: -20px;
+}
+
+.glass{
+   background: rgba(0, 0, 0, 1);
+   width: 5px;
+   height: 33px;
+   position: absolute;
+   left: 40px;
+   top: -23px;
+}

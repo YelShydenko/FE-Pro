@@ -1,0 +1,25 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.list{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   max-width: 950px;
+   margin: 0 auto;
+}
+
+.item{
+   width: 250px;
+}
+
+.box{
+   width: 250px;
+   height: 207px;
+   background: rgba(217, 217, 217, 1);
+   margin-bottom: 15px;
+}
+

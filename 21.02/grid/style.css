@@ -1,0 +1,107 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.box2{
+   width: 100px;
+   height: 100px;
+   background-color: brown;
+}
+
+
+.grid__container {
+  display: grid;
+  /* создаем структуру грид для блоков */
+  grid-template-columns: 200px 200px 1fr 200px 200px;
+  /* создает необходимое кол-во колон для сетки */
+  grid-template-rows: 200px 400px 600px;
+  /* создает необходимое кол-во строк для сетки */
+  row-gap: 20px;
+  /* создает расстояние между строками */
+  column-gap: 50px;
+  /* создает расстояние между колоннами */
+}
+.box2:nth-child(3) {
+  background-color: teal;
+  grid-column-start: 5;
+  /* с какой колонны будет стартовать элемент, к которому было применено это свойство */
+  grid-row-start: 3;
+  /* с какой стройки будет стартовать элемент, к которому было применено это свойство */
+  align-self: center;
+  /* выравнивает по вертикали */
+  justify-self: center;
+  /* выравнивает по горизонтали */
+}
+
+.second__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.second__item {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+/* =========================================================================================================================================== */
+
+.box_item{
+   width: 200px;
+   height: 200px;
+   background-color: blue;
+   margin-bottom: 15px;
+}
+
+.container{
+   max-width: 200px;
+}
+
+.grid_container2{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   justify-items: center;
+   row-gap: 20px;
+}
+
+/* =================================================================================== */
+
+.element_item{
+   width: 100%;
+   height: 200px;
+   background-color: darkgoldenrod;
+}
+
+.element{
+   max-width: 230px;
+   border: 2px solid black;
+   border-radius: 8px;
+   padding: 10px;
+}
+
+.parents{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   justify-items: center;
+   row-gap: 20px;
+}
+
+.element:last-child{
+   grid-column-start: 3;
+}
+
+.element:last-child .element_item{
+   background-color: blueviolet;
+}
+
+.element:nth-child(4){
+   grid-column-start: 2;
+   grid-row-start: 4;
+}
