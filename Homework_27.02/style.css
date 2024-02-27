@@ -87,10 +87,16 @@ footer {
    .products{
       grid-template-columns: repeat(2, 228px);
    }
+   .container{
+      max-width: 507px;
+   }
 }
 
 @media (max-width: 515px) {
    .products{
       grid-template-columns: repeat(1, 228px);
+   }
+   .container{
+      max-width: 228px;
    }
 }
