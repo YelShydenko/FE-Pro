@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(222.26deg, #3b1d60 1.22%, #040d3e 106.28%);
+  background-attachment: fixed;
+}
+
+header {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 75px auto;
+}
+
+.header__left nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #b5b5b5;
+  text-transform: uppercase;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.registration {
+  display: flex;
+  gap: 20px;
+}
+
+.registration button:nth-child(1) {
+  border: 1px solid #f2994a;
+  border-radius: 3px;
+  color: #f2994a;
+  background: none;
+  padding: 8px 28px;
+  text-transform: uppercase;
+}
+
+.registration button:nth-child(2) {
+  border: 1px solid #f2994a;
+  border-radius: 3px;
+  color: #ffffff;
+  background: #f2994a;
+  padding: 8px 28px;
+  text-transform: uppercase;
+}
+
+.intro {
+  display: flex;
+  max-width: 1110px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.left__side {
+  max-width: 531px;
+  position: relative;
+}
+
+.left__side h1 {
+  font-size: 44px;
+  color: #99efd0;
+  margin-bottom: 19px;
+}
+
+.left__side .sub__tittle {
+  color: #8476aa;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.left__side .more {
+  background: #f2994a;
+  color: #ffffff;
+  padding: 13px 31px;
+  font-size: 12px;
+  border: 1px solid #f2994a;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-right: 20px;
+
+}
+
+.left__side .demo {
+  background: none;
+  color: #f2994a;
+  padding: 13px 57px;
+  font-size: 12px;
+  border: 1px solid #f2994a;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.video__player {
+  display: flex;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.video__player .description{
+   margin: 4px 0;
+}
+
+.video__player .description .player__description {
+  color: #8476aa;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.video__player .description .preview {
+  color: #6d6d78;
+  font-size: 14px;
+}
+
+.left__side::before {
+  position: absolute;
+  content: url(img/Running_man.png);
+  left: 531px;
+  top: -20px;
+  
+}
+
+.companies{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 103px auto 99px;
+   max-width: 1170px;
+   filter: opacity(30%);
+}
+
+.choice__background{
+   position: absolute;
+   content: url(img/background_stars_down.png);
+   top: 701px;
+
+   width: 100%;
+}
