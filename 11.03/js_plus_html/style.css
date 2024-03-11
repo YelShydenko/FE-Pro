@@ -1,0 +1,12 @@
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.box__image {
+    height: 350px;
+    width: 250px;
+    background-color: teal;
+}
