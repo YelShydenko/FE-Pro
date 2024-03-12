@@ -18,7 +18,7 @@
 //     array.forEach(function (element, i, arr) {
 //         return arr[i] = element + 1;
 //       });
-//       console.log(numbers);
+//       console.log(array);
 // }
 // numberPlusOne(numbers)
 
@@ -157,8 +157,8 @@
 // const words =  ['There', 'was', 'a', 'nine', 'tailed', 'red', 'fox']
 
 // function filteredWords(array) {
-//     const wordsWithA = array.filter(function(str){
-//         return str.includes('a')
+//     const wordsWithA = array.filter(function(elem){
+//         return elem.includes('a')
 //     })
 //     console.log(wordsWithA);
 // }
