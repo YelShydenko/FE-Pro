@@ -1,0 +1,75 @@
+/* .container{
+   width: 150px;
+   height: 150px;
+   background-color: blue;
+} */
+/* ----------------------------------- */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.products{
+   display: grid;
+   margin: 35px 0;
+   justify-content: center;
+   grid-template-columns: repeat(3, 233px);
+   gap: 30px 100px;
+   
+}
+
+.item{
+   border: 1px solid black;
+   width: 233px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+}
+
+.item p{
+   margin: 32px 0 46px;
+   font-size: 14px;
+}
+
+.item .btn{
+   padding: 15px 14px;
+   background: none;
+   border: 1px solid black;
+}
+
+.firstElement__active{
+   border: 3px solid red;
+}
+
+.second__item{
+   position: relative;
+}
+
+.newElem{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: aqua;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+/* -------------------------------------- */
+.modal {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.modal__container {
+    width: 500px;
+    height: 700px;
+    background-color: white;
+}
