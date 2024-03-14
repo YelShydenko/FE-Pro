@@ -23,8 +23,7 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-.page {
-}
+
 .page__hero {
   margin-bottom: 170px;
 }
@@ -153,10 +152,7 @@ body {
   max-width: 100%;
   min-height: 100%;
 }
-.header__menu {
-}
-.menu {
-}
+
 .menu__list {
   display: flex;
   column-gap: 40px;
@@ -164,8 +160,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-.menu__item {
-}
+
 .menu__link {
   font-size: 14px;
   color: #9a9ea6;
@@ -301,9 +296,6 @@ body {
   text-decoration: none;
 }
 
-.content-hero__text {
-}
-
 .content-hero__text p {
   line-height: 187.5%;
 }
@@ -339,8 +331,6 @@ body {
   grid-template-rows: repeat(2, 1fr);
   gap: 27px;
 }
-.images-hero__item {
-}
 .images-hero__image {
   border-radius: 10px;
   max-width: 100%;
@@ -350,8 +340,6 @@ body {
   grid-row: span 2;
   align-self: end;
   padding-bottom: 10px;
-}
-.images-hero__item--02 {
 }
 .images-hero__item--03 {
   align-self: center;
@@ -371,12 +359,6 @@ body {
 
 /* FEATURES */
 
-.features {
-}
-.features__container {
-}
-.features__header-block {
-}
 .features__items {
   display: flex;
   flex-wrap: wrap;
@@ -421,12 +403,6 @@ body {
 
 /* SERVICES */
 
-.services {
-}
-.services__container {
-}
-.services__header-block {
-}
 .services__items {
   display: grid;
   gap: 140px;
@@ -465,8 +441,6 @@ body {
 }
 .services__title span {
   color: #4475f2;
-}
-.services__text {
 }
 .services__text p {
   line-height: 187.5%;
@@ -513,14 +487,6 @@ body {
 
 /* REVIEWS */
 
-.reviews {
-}
-.reviews__container {
-}
-.reviews__header-block {
-}
-.reviews__body {
-}
 .reviews__items {
   display: flex;
   gap: 50px;
@@ -567,8 +533,7 @@ body {
 .reviews__text p:not(:last-child) {
   margin-bottom: 10px;
 }
-.reviews__title {
-}
+
 .reviews__link-title {
   color: #23a6f0;
   line-height: 187.5%;
@@ -586,12 +551,6 @@ body {
 
 /* LOCATION */
 
-.location {
-}
-.location__container {
-}
-.location__header-block {
-}
 .location__map {
   width: 100%;
   height: 405px;
@@ -600,8 +559,7 @@ body {
 }
 /* FOOTER */
 
-.footer {
-}
+
 .footer__body {
    margin-bottom: 95px;
 }
@@ -627,8 +585,7 @@ body {
 .footer__logo {
    max-width: 248px;
 }
-.footer__social {
-}
+
 .social {
    display: flex;
    flex-wrap: wrap;
@@ -636,8 +593,7 @@ body {
    height: 93px;
    align-items: center;
 }
-.social__item {
-}
+
 .footer__link {
    height: 93px;
    align-items: center;
