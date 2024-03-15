@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./pallas-cat.jpg') no-repeat center center / cover;
+    height: 100vh;
+    
+}
+
+header {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+header nav ul {
+    display: flex;
+    gap: 30px;
+    padding: 20px 30px;
+    background-color: rgba(0,0,0,0.5);
+    list-style: none;
+    color: white;
+}
+
+.post__container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+}

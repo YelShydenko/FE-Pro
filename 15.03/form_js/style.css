@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#productForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  gap: 15px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+
+#productForm input {
+  border-radius: 10px;
+  padding: 15px 24px;
+  border: 1px solid grey;
+}
+
+.btn {
+  background-color: red;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 24px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: blue;
+  font-size: larger;
+}
