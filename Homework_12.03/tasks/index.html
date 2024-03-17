@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <form action="">
-        <input type="text">
-    </form>
+    <div class="container">
+        <form id="authorization" class="authorization">
+            <input id="userName" type="text" class="user__name" placeholder="Enter User Name">
+            <button type="submit" class="btn">Save</button>
+        </form>
+        <ul id="userList" class="user__name-list"></ul>
 
+        <div class="visit__counter">
+            <h3>Visit Counter</h1>
+    <p>You have visited this page <span id="visitCount">0</span> times</p>
+        </div>
+        
+    </div>
+    
 
     <script src="./script.js"></script>
 </body>
