@@ -7,24 +7,9 @@ const form = document.querySelector("#authorization");
 const userName = document.querySelector("#userName");
 const userList = document.querySelector("#userList");
 
-let nameList = getFromLocal();
+let nameList = [];
 
-function getFromLocal() {
-  const localName = localStorage.getItem("userNames");
-  if (localName) {
-    return JSON.parse(localName);
-  } else {
-    return [];
-  }
-}
-
-
-if (localStorage.getItem("userNames")) {
-  nameList = getFromLocal();
-} else {
-  nameList = [];
-}
-
+nameLocal()
 
 function createList() {
   userList.innerHTML = "";
@@ -49,9 +34,14 @@ function addName(event) {
 }
 form.addEventListener("submit", addName);
 
-
-
-
+function nameLocal(){
+  window.addEventListener('load', () => {
+    if (localStorage.getItem('userNames')) {
+        nameList = JSON.parse(localStorage.getItem('userNames'));
+        createList();
+    }
+  });
+}
 
 
 // Счетчик посещений:
@@ -81,6 +71,8 @@ const toDoList = document.querySelector("#toDoList");
 
 let tasks = [];
 
+taskLocal()
+
 function createToDoList() {
   toDoList.innerHTML = "";
   tasks.forEach((task) => {
@@ -104,3 +96,12 @@ function addTask(event) {
   }
 }
 toDoForm.addEventListener("submit", addTask);
+
+function taskLocal(){
+  window.addEventListener('load', () => {
+    if (localStorage.getItem('tasks')) {
+      tasks = JSON.parse(localStorage.getItem('tasks'))
+      createToDoList()
+    }
+  })
+}
