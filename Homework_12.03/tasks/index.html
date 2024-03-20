@@ -9,15 +9,31 @@
 <body>
     <div class="container">
         <form id="authorization" class="authorization">
-            <input id="userName" type="text" class="user__name" placeholder="Enter User Name">
+            <h3>Username</h3>
+            <input id="userName" type="text" class="user__name" placeholder="Enter username">
             <button type="submit" class="btn">Save</button>
         </form>
-        <ul id="userList" class="user__name-list"></ul>
 
+        <div class="user__name-list">
+            <h3>Username List</h3>
+        <ul id="userList"></ul>
+        </div>
+        
         <div class="visit__counter">
             <h3>Visit Counter</h1>
-    <p>You have visited this page <span id="visitCount">0</span> times</p>
+            <p>You have visited this page <span id="visitCount">0</span> times</p>
         </div>
+
+        <form id="toDoForm" class="to__do__form">
+            <h3>To Do</h3>
+            <input id="toDoInput" type="text" class="to__do__input" placeholder="Enter your task">
+            <button type="submit" class="btn">Add task</button>
+        </form>
+        <div class="to__do__list">
+            <h3>To Do List</h3>
+            <ul id="toDoList"></ul>
+        </div>
+
         
     </div>
     
