@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkblue;
+}
+
+.random__user__container {
+  background-color: white;
+  margin: 100px auto;
+  border-radius: 10px;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  padding: 30px;
+  color: darkblue;
+}
+
+
+.user__card {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.user__main__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.user__img {
+  background-color: grey;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
