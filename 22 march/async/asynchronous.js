@@ -31,7 +31,7 @@ async function newDelay() {
 }
 newDelay();
 
-// отправка запроса на удаленный сервер 
+// отправка запроса на удаленный сервер
 async function fetchApi() {
   // 1 шаг
   const url = `https://jsonplaceholder.typicode.com/posts`;
@@ -54,17 +54,17 @@ async function fetchApi() {
 fetchApi();
 
 async function fetchToDo(id) {
-    const url = `https://jsonplaceholder.typicode.com/todos/${id}`;
+  const url = `https://jsonplaceholder.typicode.com/todos/${id}`;
 
-    try {
-        const response = await fetch(url)
-        if (!response.ok) {
-            throw new Error()
-        }
-        const data = await response.json()
-        console.log(data);
-    } catch (error) {
-        console.error('Exsample error:', error)
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error();
     }
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error("Exsample error:", error);
+  }
 }
-fetchToDo(15)
+fetchToDo(15);
