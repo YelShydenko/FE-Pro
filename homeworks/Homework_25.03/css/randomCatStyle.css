@@ -1,11 +1,36 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-   background-image: url('../img/catPaws.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  background-image: url("../img/catPaws.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.random__cat__container {
+  background-color: bisque;
+  width: 700px;
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cat__container {
+  margin-top: 30px;
+}
+
+.cat__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.cat__img {
+  max-width: 450px;
+  max-height: 350px;
 }
