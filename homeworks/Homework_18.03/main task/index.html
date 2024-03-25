@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="productForm" class="form">
+      <div class="input__field">
+        <label for="productName">Название товара</label>
+        <input
+          id="productName"
+          class="filter__input"
+          type="text"
+          placeholder=""
+        />
+      </div>
+      <div class="input__field">
+        <label for="productPrice">Цена</label>
+        <input
+          id="productPrice"
+          class="filter__input"
+          type="number"
+          placeholder=""
+        />
+      </div>
+      <div class="input__field">
+        <label for="productCount">Количество</label>
+        <input
+          id="productCount"
+          class="filter__input"
+          type="number"
+          placeholder=""
+        />
+      </div>
+      <button type="submit">Добавить</button>
+    </form>
+
+    <div class="filter__container">
+      <div class="input__field">
+        <label for="filterByName">Фильтрация по названию</label>
+        <input
+          id="filterByName"
+          class="filter__input"
+          type="text"
+          placeholder=""
+        />
+      </div>
+      <div class="input__field">
+        <label for="filterByPrice">Фильтрация по цене</label>
+        <input
+          id="filterByPrice"
+          class="filter__input"
+          type="number"
+          placeholder=""
+        />
+      </div>
+      <div class="input__field">
+        <label for="filterByCount">Фильтрация по количеству</label>
+        <input
+          id="filterByCount"
+          class="filter__input"
+          type="number"
+          placeholder=""
+        />
+      </div>
+    </div>
+    <div class="product__list">
+      <h2>Список продуктов</h2>
+      <ul id="productList" class="product__list"></ul>
+    </div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,4 +1,8 @@
 Homework files: 
-[Homework 19.02](https://github.com/YelShydenko/FE-Pro/tree/85a9940fbe29e41b2cc3f1c97245b7241701950c/Homework_19.02)
-[Homework 24.02](https://github.com/YelShydenko/FE-Pro/tree/e49687f356a216440b6b9e6aa763dddcc2717033/Homework_24.02)
-[Homework 27.02](https://github.com/YelShydenko/FE-Pro/tree/ada82e493d367365b2d7be679356dfe1c8234d78/Homework_27.02)
+[Homework from 19.02(1)](https://github.com/YelShydenko/FE-Pro/tree/7332f5bb0bde7c3ca7b173dce90de4a8cfa2fcf4/homeworks/Homework_19.02)
+[Homework from 19.02(2)](https://github.com/YelShydenko/FE-Pro/tree/7332f5bb0bde7c3ca7b173dce90de4a8cfa2fcf4/homeworks/Homework_19.02.2)
+[Homework from 26.02](https://github.com/YelShydenko/FE-Pro/tree/7332f5bb0bde7c3ca7b173dce90de4a8cfa2fcf4/homeworks/Homework_26.02)
+[Homework from 04.03](https://github.com/YelShydenko/FE-Pro/tree/7332f5bb0bde7c3ca7b173dce90de4a8cfa2fcf4/homeworks/Homework_04.03)
+[Homework from 06.03](https://github.com/YelShydenko/FE-Pro/tree/7332f5bb0bde7c3ca7b173dce90de4a8cfa2fcf4/homeworks/Homework_06.03)
+[Homework from 11.03](https://github.com/YelShydenko/FE-Pro/tree/7332f5bb0bde7c3ca7b173dce90de4a8cfa2fcf4/homeworks/Homework_11.03)
+[Homework from 18.03](https://github.com/YelShydenko/FE-Pro/tree/3900751c502e9d76f4b7493d9afafddd55b7bbce/homeworks/Homework_18.03)
