@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url(../img/nasa.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.nasa{
+    background-color: black;
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px;
+    color: white;
+    text-align: center;
+}
+
+.image__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    max-width: 600px;
+    gap: 30px;
+}
+
+.nasa__img{
+    width: 400px;
+}

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #4285f4;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.book__list{
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 40px;
+    width: 1300px;
+}
+
+.book__card{
+    border: 2px solid #4285f4;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    gap: 20px;
+    color: #000;
+}
+
+.book__card p:last-child{
+    max-width: 258px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.book__img{
+    background-color: #4285f4;
+    width: 250px;
+    height: 250px;
+}
+
