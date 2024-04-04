@@ -5,6 +5,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html, body{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   background: rgba(51, 51, 49, 1);
   width: 100%;
@@ -44,6 +54,8 @@ header {
 
 .modals {
   margin: 37px 112px;
+
+  flex: 1 1 auto;
 }
 
 .modals h2 {
@@ -63,14 +75,14 @@ header {
   border: none;
 }
 
-.footer {
+.footer{
   background: rgba(51, 51, 49, 1);
   width: 100%;
   height: 145px;
 
-  position: fixed;
+  /* position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
 .post__container {
@@ -98,6 +110,7 @@ header {
   bottom: -13px;
   background-color: black;
 }
+
 .body__container {
   display: flex;
   gap: 55px;
@@ -136,7 +149,13 @@ header {
   gap: 34px;
 }
 
-.closeModal {
+.close__modal{
+  position: absolute;
+  left: 550px;
+  top: -50px;
+}
+
+.close__modal {
 	background-color: black;
   width: 45px;
   height: 45px;
@@ -145,8 +164,8 @@ header {
   position: relative;
 }
 
-.closeModal::before,
-.closeModal::after {
+.close__modal::before,
+.close__modal::after {
 	content: '';
 	position: absolute;
 	top: 17px;
@@ -157,10 +176,10 @@ header {
 	background: white;
 }
 
-.closeModal::before {
+.close__modal::before {
 	transform: rotate(45deg);
 }
 
-.closeModal::after {
+.close__modal::after {
 	transform: rotate(-45deg);
 }

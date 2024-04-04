@@ -6,7 +6,7 @@ async function getPosts() {
       throw new Error();
     }
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     createPost(data);
   } catch (error) {
     console.error(`Failed to get posts:`, error);
@@ -16,6 +16,8 @@ async function getPosts() {
 
 //  <!-- <div class="modal__background">
 //    <div class="modal">
+// <!-- <div class="closeModal">
+// </div>
 //      <h2>Fetch posts</h2>
 //      <div class="modal__content">
 //        <div class="post__container">
@@ -41,6 +43,9 @@ async function getPosts() {
 function createPost(data) {
   const modal = document.createElement("div");
   modal.classList.add("modal");
+
+  const closeModal = document.createElement('div')
+  closeModal.classList.add("close__modal");
 
   const modalTitle = document.createElement("h2");
   modalTitle.textContent = "Fetch posts";
@@ -76,16 +81,27 @@ function createPost(data) {
     modalContent.append(postContainer);
   });
 
-  modal.append(modalTitle, modalContent);
+  modal.append(closeModal, modalTitle, modalContent);
 
   const modalBackground = document.createElement("div");
   modalBackground.classList.add("modal__background");
 
   modalBackground.append(modal);
-  document.body.append(modalBackground);
+
+  const modalPlace = document.querySelector(".place__for__modal");
+  modalPlace.append(modalBackground)
+
+  // document.body.append(modalBackground);
+
+  closeModal.addEventListener('click', function() {
+    modalBackground.remove()
+  })
+
 }
 
 const buttonFetch = document.querySelector("#btn");
+
+
 
 buttonFetch.addEventListener("click", function () {
   getPosts();
