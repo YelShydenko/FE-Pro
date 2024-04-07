@@ -7,3 +7,4 @@ Homework files:
 [Homework from 11.03](https://github.com/YelShydenko/FE-Pro/tree/7332f5bb0bde7c3ca7b173dce90de4a8cfa2fcf4/homeworks/Homework_11.03)
 [Homework from 18.03](https://github.com/YelShydenko/FE-Pro/tree/3900751c502e9d76f4b7493d9afafddd55b7bbce/homeworks/Homework_18.03)
 [Homework from 25.03](https://github.com/YelShydenko/FE-Pro/tree/5b9d12e613ba1aa98d38464e95652a8df293de2b/homeworks/Homework_25.03)
+[Homework from 25.03(2)](https://github.com/YelShydenko/FE-Pro/tree/dcd4c186c2a25e786cf7a89d5d11b657656f3d1c/homeworks/Homework_Easter_holiday)
