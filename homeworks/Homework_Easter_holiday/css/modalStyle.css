@@ -117,7 +117,7 @@ header {
 }
 
 .modal__background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -130,12 +130,14 @@ header {
   background-color: white;
   border-radius: 8px;
   padding: 30px;
-  width: 600px;
+  width: 620px;
+  height: 500px;
 
-  position: absolute;
+  position: fixed;
   top: 185px;
   left: 50%;
   transform: translate(-50%);
+
 }
 
 .modal h2 {
@@ -147,11 +149,16 @@ header {
   display: flex;
   flex-direction: column;
   gap: 34px;
+/* так как у меня была проблема с полупрозрачным фоном и я не могла никак её решить, 
+я решила сделать так чтобы посты прокручивались внутри модального окна) */
+  padding-left: 10px;
+  height: 350px;
+  overflow-y: scroll
 }
 
 .close__modal{
   position: absolute;
-  left: 550px;
+  left: 565px;
   top: -50px;
 }
 
