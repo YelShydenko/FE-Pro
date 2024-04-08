@@ -1,0 +1,28 @@
+$border--primary: 10px;
+$primary--padding: 20px;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: grey;
+}
+
+.container{
+   background-color: orange;
+   width: 700px;
+   padding: $primary--padding;
+   border-radius: $border--primary;
+   display: flex;
+   align-items: center;
+   margin: 50px auto;
+
+   &__item{
+      background-color: gray;
+      width: 500px;
+      padding: $primary--padding;
+      border-radius: $border--primary;
+   }
+}
