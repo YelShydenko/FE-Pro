@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  max-width: 520px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  line-height: 33px;
+  color: white;
+  font-size: 64px;
+  line-height: 78px;
+  padding: 10px 0 24px 0;
+}
+
+h3 {
+  font-size: 42px;
+  font-weight: 400;
+  font-family: "Cardo", serif;
+  color: #1B3764;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #969AA0;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Cardo", serif;
+  line-height: 33px;
+  letter-spacing: 0.38px;
+  color: #1B3764;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #1B3764;
+  padding-top: 20px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__content-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__content-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.header__content-right {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.header__content-right nav ul {
+  display: flex;
+  gap: 45px;
+  color: white;
+}
+
+.header__content-right nav ul li {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+}
+.header__content-right nav ul li:first-child {
+  color: #FFCA42;
+}
+
+.order__btn {
+  padding: 12px 40px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 19px;
+  background-color: #FFCA42;
+  outline: none;
+  border: none;
+}
+
+.intro-section {
+  background: #1B3764;
+}
+
+.intro {
+  padding: 100px 0 75px 0;
+  display: flex;
+  align-items: center;
+  gap: 105px;
+}
+.intro__left h2 {
+  font-size: 21px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  line-height: 33px;
+  padding-left: 48px;
+  position: relative;
+  color: white;
+}
+.intro__left h2::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 35px;
+  background: #FFCA42;
+  left: 0;
+  top: 45%;
+}
+.intro__left h5 {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  color: #B4C7E7;
+}
+.intro__left-btns {
+  margin: 40px 0;
+}
+.intro__left-btns button:first-child {
+  margin-right: 50px;
+}
+.intro__left-btns button:last-child {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 19px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.intro__left-review {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  color: white;
+}
+.intro__left-review_item {
+  position: relative;
+  padding-left: 25px;
+}
+.intro__left-review_item::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #FFCA42;
+  border-radius: 50%;
+}
+.intro__left-review_item h4 {
+  color: white;
+  margin-bottom: 12px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  line-height: 33px;
+}
+.intro__left-review_item div {
+  color: #B4C7E7;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.author h3 {
+  text-align: center;
+}
+.author__content {
+  display: flex;
+  gap: 48px;
+}
+.author__content-item {
+  display: flex;
+  gap: 30px;
+}
+.author__content-item_text {
+  padding-top: 48px;
+}
+.author__content-item_text h2 {
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 32px;
+  margin-bottom: 7px;
+  color: #1B3764;
+}
+.author__content-item_text div {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFCA42;
+  font-size: 21px;
+  line-height: 33px;
+}
+.author__content-item_text p {
+  padding: 16px 0;
+  line-height: 28px;
+}
+.author__content-item_text h4 {
+  padding-left: 26px;
+  position: relative;
+}
+.author__content-item_text h4::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #FFCA42;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

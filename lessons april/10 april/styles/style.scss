@@ -1,0 +1,258 @@
+$primaryColor: #1B3764;
+$secondaryColor: #FFCA42;
+$mainTextColor: #969AA0;
+$thirdPartyColor: #B4C7E7;
+
+
+@mixin resetFile {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin cardoFont {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+@mixin interFont {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+* {
+    @include resetFile;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    max-width: 520px;
+    @include cardoFont;
+    color: white;
+    font-size: 64px;
+    line-height: 78px;
+    padding: 10px 0 24px 0;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: 400;
+    font-family: "Cardo", serif;
+    color: $primaryColor;
+}
+
+p {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: $mainTextColor;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Cardo", serif;
+    line-height: 33px;
+    letter-spacing: 0.38px;
+    color: $primaryColor;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: $primaryColor;
+    padding-top: 20px;
+}
+
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+
+    }
+
+    &-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        nav {
+
+            ul {
+                display: flex;
+                gap: 45px;
+                color: white;
+                li {
+                    @include interFont;
+                    &:first-child {
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.order__btn {
+    padding: 12px 40px;
+    @include cardoFont;
+    font-size: 19px;
+    background-color: $secondaryColor;
+    outline: none;
+    border: none;
+}
+
+.intro-section {
+    background: $primaryColor;
+}
+
+.intro {
+    padding: 100px 0 75px 0;
+    display: flex;
+    align-items: center;
+    gap: 105px;
+
+    &__left {
+
+        h2 {
+            font-size: 21px;
+            @include cardoFont;
+            padding-left: 48px;
+            position: relative;
+            color: white;
+            &::before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 35px;
+                background: $secondaryColor;
+                left: 0;
+                top: 45%;
+            }
+        }
+        h5 {
+            font-size: 18px;
+            @include interFont;
+            color: $thirdPartyColor;
+        }
+
+        &-btns {
+            margin: 40px 0;
+
+            button{
+                &:first-child {
+                    margin-right: 50px;
+                }
+                &:last-child {
+                    @include cardoFont;
+                    font-size: 19px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+        &-review {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            color: white;
+            &_item {
+                position: relative;
+                padding-left: 25px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 10%;
+                    left: 0;
+                    width: 16px;
+                    height: 16px;
+                    background-color: $secondaryColor;
+                    border-radius: 50%;
+                }
+                h4 {
+                    color: white;
+                    margin-bottom: 12px;
+                    @include cardoFont;
+                }
+
+                div {
+                    color: $thirdPartyColor;
+                    @include interFont;
+                }
+            }
+        }
+    }
+}
+
+.author {
+    h3 {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        gap: 48px;
+
+        &-item {
+            display: flex;
+            gap: 30px;
+            
+            &_text {
+                padding-top: 48px;
+                h2 {
+                    @include cardoFont;
+                    font-size: 32px;
+                    margin-bottom: 7px;
+                    color: $primaryColor;
+                }
+                div {
+                    @include interFont;
+                    color: $secondaryColor;
+                    font-size: 21px;
+                    line-height: 33px;
+                }
+                p {
+                    padding: 16px 0;
+                    line-height: 28px;
+                }
+    
+                h4 {
+                    padding-left: 26px;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 25%;
+                        left: 0;
+                        width: 16px;
+                        height: 16px;
+                        background-color: $secondaryColor;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
