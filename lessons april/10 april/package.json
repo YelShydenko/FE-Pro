@@ -1,16 +1,16 @@
 {
-  "name": "10-april",
+  "name": "10-abril",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass styles/style.scss styles/style.css"
+    "sass": "sass css/style.scss dist/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "sass": "^1.74.1"
   }
 }
