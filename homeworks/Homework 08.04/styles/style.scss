@@ -1,0 +1,432 @@
+@mixin dotStyle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+@mixin arrowStyle {
+  width: 60px;
+  height: 60px;
+}
+
+@mixin aditionalHeader {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 900;
+  color: rgba(189, 189, 189, 1);
+}
+
+@mixin sectionHeader {
+  font-family: "Merriweather";
+  color: rgba(51, 51, 51, 1);
+  font-size: 48px;
+  font-weight: 900;
+}
+
+$primaryColor: rgba(255, 255, 255, 1);
+$accentColor: rgba(0, 95, 163, 1);
+$seccondBackground: rgba(235, 235, 235, 1);
+$sectionHeaderColor: rgba(189, 189, 189, 1);
+$textColor: rgba(34, 34, 34, 1);
+$mainFont: "Merriweather";
+$additionalFont: "Lato";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+
+  .header__container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1190px;
+
+    &-left {
+      display: flex;
+      gap: 23px;
+
+      .grey__box {
+        background: rgba(217, 217, 217, 1);
+        width: 51px;
+        height: 118px;
+      }
+      .logo__container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        h1 {
+          color: $accentColor;
+          font-family: $mainFont;
+          font-weight: 900;
+          font-size: 36px;
+        }
+      }
+    }
+    &-right {
+      ul {
+        display: flex;
+        gap: 68px;
+        list-style: none;
+        font-size: 14px;
+        color: $textColor;
+        font-family: $additionalFont;
+      }
+    }
+  }
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: $accentColor;
+  border: none;
+  padding: 19px 44px;
+  color: $primaryColor;
+  font-family: $additionalFont;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main {
+  .accounting__services {
+    background-image: url(../img/cityPicture.png);
+    background-repeat: no-repeat;
+    padding: 170px 0 104px;
+
+    &-header {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 80px;
+      margin-bottom: 70px;
+      h2 {
+        width: 589px;
+        font-size: 48px;
+        font-family: $mainFont;
+        font-weight: 700;
+        color: $primaryColor;
+      }
+    }
+
+    &-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      .dot__container {
+        display: flex;
+        gap: 40px;
+
+        .dot {
+          @include dotStyle();
+          background-color: rgba(255, 255, 255, 0.4);
+
+          &:nth-child(3) {
+            background-color: $primaryColor;
+          }
+        }
+      }
+
+      .arrow__container {
+        display: flex;
+
+        .arrow__left {
+          @include arrowStyle();
+          background-color: rgba(255, 255, 255, 0.2);
+          img {
+            display: block;
+            margin: 22px auto;
+          }
+        }
+
+        .arrow__right {
+          @include arrowStyle();
+          background-color: rgba(255, 255, 255, 0.4);
+          img {
+            display: block;
+            margin: 22px auto;
+          }
+        }
+      }
+    }
+  }
+
+  .specialize {
+    background-color: $seccondBackground;
+    padding: 140px 0;
+
+    h4 {
+      @include aditionalHeader();
+    }
+
+    h2 {
+      @include sectionHeader();
+      margin: 40px 0 102px;
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(3, 350px);
+      gap: 30px;
+
+      .item {
+        background: url(../img/ServiceItem.png);
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 360px;
+        padding: 261px 45px 45px;
+        position: relative;
+
+        h3 {
+          color: $primaryColor;
+          width: 187px;
+          font-family: $additionalFont;
+          font-weight: 900;
+          font-size: 24px;
+          z-index: 1;
+          position: relative;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 95, 163, 0.65);
+          opacity: 0;
+          transition: 0.3s ease;
+          z-index: 0;
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .about {
+    padding: 104px 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__info {
+      h4 {
+        @include aditionalHeader();
+      }
+      h2 {
+        @include sectionHeader();
+        margin: 40px 0 60px;
+        width: 347px;
+        span {
+          color: $accentColor;
+        }
+      }
+      p {
+        width: 445px;
+        font-family: $additionalFont;
+        font-weight: 300;
+        font-size: 18px;
+      }
+    }
+
+    &__statistics {
+      display: grid;
+      grid-template-columns: repeat(2, 255px);
+      gap: 30px;
+
+      &-item {
+        background-color: $seccondBackground;
+        width: 255px;
+        height: 255px;
+        padding: 30px 40px 40px;
+
+        .number {
+          font-family: $additionalFont;
+          font-weight: 900;
+          font-size: 55px;
+        }
+
+        .description {
+          font-weight: 700;
+          font-size: 14px;
+          width: 107px;
+          margin: 30px 0 47px;
+        }
+
+        a {
+          font-family: $additionalFont;
+          color: $accentColor;
+          font-size: 14px;
+        }
+
+        &:nth-child(4) {
+          color: $primaryColor;
+          background-color: $accentColor;
+
+          a {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+
+  .partners {
+    background-color: $seccondBackground;
+    padding: 100px 0;
+    .container {
+      h4 {
+        @include aditionalHeader();
+      }
+      h2 {
+        @include sectionHeader();
+        margin: 40px 0 80px;
+      }
+    }
+    &__example {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      .dot__container {
+        display: flex;
+        gap: 40px;
+
+        .dot {
+          @include dotStyle();
+          background: rgba(0, 95, 163, 0.4);
+
+          &:nth-child(3) {
+            background-color: $accentColor;
+          }
+        }
+      }
+
+      .arrow__container {
+        display: flex;
+
+        .arrow__left {
+          @include arrowStyle();
+          background: rgba(0, 95, 163, 0.2);
+          img {
+            display: block;
+            margin: 22px auto;
+          }
+        }
+
+        .arrow__right {
+          @include arrowStyle();
+          background-color: $accentColor;
+          img {
+            display: block;
+            margin: 22px auto;
+          }
+        }
+      }
+    }
+  }
+
+  .reviews {
+    padding: 140px 0 140px;
+    .container {
+      h4 {
+        @include aditionalHeader();
+      }
+      h2 {
+        @include sectionHeader();
+        margin: 40px 0 80px;
+      }
+    }
+    &__example {
+      background-color: $seccondBackground;
+      padding: 45px 95px;
+      margin-bottom: 50px;
+      &-text {
+        font-family: $additionalFont;
+        font-size: 18px;
+        margin-bottom: 58px;
+      }
+      &-person {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        .name {
+          .fullname {
+            font-family: $additionalFont;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .position {
+            font-family: $additionalFont;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      .dot__container {
+        display: flex;
+        gap: 40px;
+
+        .dot {
+          @include dotStyle();
+          background: rgba(0, 95, 163, 0.4);
+
+          &:nth-child(3) {
+            background-color: $accentColor;
+          }
+        }
+      }
+
+      .arrow__container {
+        display: flex;
+
+        .arrow__left {
+          @include arrowStyle();
+          background: rgba(0, 95, 163, 0.2);
+          img {
+            display: block;
+            margin: 22px auto;
+          }
+        }
+
+        .arrow__right {
+          @include arrowStyle();
+          background-color: $accentColor;
+          img {
+            display: block;
+            margin: 22px auto;
+          }
+        }
+      }
+    }
+  }
+}
