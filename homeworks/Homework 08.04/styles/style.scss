@@ -28,8 +28,8 @@ $accentColor: rgba(0, 95, 163, 1);
 $seccondBackground: rgba(235, 235, 235, 1);
 $sectionHeaderColor: rgba(189, 189, 189, 1);
 $textColor: rgba(34, 34, 34, 1);
-$mainFont: "Merriweather";
-$additionalFont: "Lato";
+$mainFont: "Merriweather", serif;
+$additionalFont: "Lato", sans-serif;
 
 * {
   margin: 0;
@@ -90,7 +90,7 @@ header {
 .btn {
   background-color: $accentColor;
   border: none;
-  padding: 19px 44px;
+  padding: 19px 40px;
   color: $primaryColor;
   font-family: $additionalFont;
   font-weight: 400;
@@ -428,5 +428,120 @@ main {
         }
       }
     }
+  }
+
+  .contacts {
+    background-image: url(../img/cityPicture.png);
+    background-repeat: no-repeat;
+    padding: 122px 0 140px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__left {
+      h2 {
+        @include sectionHeader();
+        color: $primaryColor;
+      }
+
+      .contact__comment {
+        font-family: $additionalFont;
+        font-size: 18px;
+        max-width: 445px;
+        color: $primaryColor;
+        margin: 60px 0 79px;
+        opacity: 70%;
+      }
+
+      &-icons {
+        // width: 290px;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        gap: 53px;
+
+        .contact__phone,
+        .contact__email {
+          display: flex;
+          align-items: center;
+          color: $primaryColor;
+          gap: 15.58px;
+
+          font-family: $additionalFont;
+          font-weight: 300;
+          font-size: 21px;
+          p {
+            opacity: 70%;
+          }
+        }
+      }
+    }
+    &__right {
+      .contact__form {
+        width: 540px;
+        .username__form {
+          display: flex;
+          gap: 30px;
+          &-name,
+          &-surname {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            label {
+              font-family: $additionalFont;
+              color: $primaryColor;
+              font-size: 16px;
+            }
+            input {
+              background: none;
+              border: none;
+              border-bottom: 1px solid $primaryColor;
+              padding: 5px 0 15px;
+              width: 255px;
+              color: $sectionHeaderColor;
+              font-size: 21px;
+              font-family: $additionalFont;
+            }
+          }
+        }
+        .message__form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          label {
+            font-family: $additionalFont;
+            color: $primaryColor;
+            font-size: 16px;
+            margin-top: 35px;
+          }
+          textarea {
+            background: none;
+              border: none;
+              border-bottom: 1px solid $primaryColor;
+              padding: 5px 0 15px;
+              width: 540px;
+              color: $sectionHeaderColor;
+              font-size: 21px;
+              font-family: $additionalFont;
+          }
+        }
+        .btn{
+          margin-top: 50px;
+          margin-left: 270px;
+        }
+      }
+    }
+  }
+}
+footer{
+  width: 100%;
+  background-color: $primaryColor;
+  padding: 50px 0 40px;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $additionalFont;
+    font-size: 14px;
   }
 }

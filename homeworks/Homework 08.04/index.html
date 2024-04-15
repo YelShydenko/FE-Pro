@@ -167,7 +167,7 @@
               текст-"рыба", часто используемый в печати и вэб-дизайне.
             </p>
             <div class="reviews__example-person">
-              <img src="./img/EkaterinaIvanova.png" alt="User">
+              <img src="./img/EkaterinaIvanova.png" alt="User" />
               <div class="name">
                 <p class="fullname">Екатерина Иванова</p>
                 <p class="position">Директор ООО “Раз-два”</p>
@@ -192,7 +192,52 @@
           </div>
         </div>
       </section>
-      <section class="contacts"></section>
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__left">
+            <h2>Связь с нами</h2>
+            <p class="contact__comment">
+              У вас остались вопросы? Напишите нам - мы ответим в ближайшее
+              время!
+            </p>
+            <div class="contacts__left-icons">
+              <div class="contact__phone">
+                <img src="./img/Phone.png" alt="Phone icon" />
+                <p>+5511933919182</p>
+              </div>
+              <div class="contact__email">
+                <img src="./img/email.png" alt="Email icon" />
+                <p>order@bu-one.ru</p>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__right">
+            <form class="contact__form">
+              <div class="username__form">
+                <div class="username__form-name">
+                  <label for="name">Имя</label>
+                  <input id="name" type="text" placeholder="Иван" />
+                </div>
+                <div class="username__form-surname">
+                  <label for="surname">Фамилия</label>
+                  <input id="surname" type="text" placeholder="Иванов " />
+                </div>
+              </div>
+              <div class="message__form">
+                <label for="message">Сообщение</label>
+                <textarea id="message" cols="30" rows="4" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <button class="btn">Отправить сообщение</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container">
+        <p>2019 (с) Все права защищены. БухОне.ру</p>
+        <p>Разработано: BuhOne</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -30,7 +30,7 @@ header .header__container-left .logo__container {
 }
 header .header__container-left .logo__container h1 {
   color: rgb(0, 95, 163);
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-weight: 900;
   font-size: 36px;
 }
@@ -40,7 +40,7 @@ header .header__container-right ul {
   list-style: none;
   font-size: 14px;
   color: rgb(34, 34, 34);
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -51,9 +51,9 @@ header .header__container-right ul {
 .btn {
   background-color: rgb(0, 95, 163);
   border: none;
-  padding: 19px 44px;
+  padding: 19px 40px;
   color: rgb(255, 255, 255);
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
@@ -73,7 +73,7 @@ main .accounting__services-header {
 main .accounting__services-header h2 {
   width: 589px;
   font-size: 48px;
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
@@ -149,7 +149,7 @@ main .specialize__items .item {
 main .specialize__items .item h3 {
   color: rgb(255, 255, 255);
   width: 187px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 24px;
   z-index: 1;
@@ -196,7 +196,7 @@ main .about__info h2 span {
 }
 main .about__info p {
   width: 445px;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
@@ -212,7 +212,7 @@ main .about__statistics-item {
   padding: 30px 40px 40px;
 }
 main .about__statistics-item .number {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 55px;
 }
@@ -223,7 +223,7 @@ main .about__statistics-item .description {
   margin: 30px 0 47px;
 }
 main .about__statistics-item a {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   color: rgb(0, 95, 163);
   font-size: 14px;
 }
@@ -317,7 +317,7 @@ main .reviews__example {
   margin-bottom: 50px;
 }
 main .reviews__example-text {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   margin-bottom: 58px;
 }
@@ -327,13 +327,13 @@ main .reviews__example-person {
   gap: 35px;
 }
 main .reviews__example-person .name .fullname {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 main .reviews__example-person .name .position {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
 }
 main .reviews__nav {
@@ -374,6 +374,114 @@ main .reviews__nav .arrow__container .arrow__right {
 main .reviews__nav .arrow__container .arrow__right img {
   display: block;
   margin: 22px auto;
+}
+main .contacts {
+  background-image: url(../img/cityPicture.png);
+  background-repeat: no-repeat;
+  padding: 122px 0 140px;
+}
+main .contacts .container {
+  display: flex;
+  justify-content: space-between;
+}
+main .contacts__left h2 {
+  font-family: "Merriweather";
+  color: rgb(51, 51, 51);
+  font-size: 48px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+main .contacts__left .contact__comment {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  max-width: 445px;
+  color: rgb(255, 255, 255);
+  margin: 60px 0 79px;
+  opacity: 70%;
+}
+main .contacts__left-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 53px;
+}
+main .contacts__left-icons .contact__phone,
+main .contacts__left-icons .contact__email {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  gap: 15.58px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+}
+main .contacts__left-icons .contact__phone p,
+main .contacts__left-icons .contact__email p {
+  opacity: 70%;
+}
+main .contacts__right .contact__form {
+  width: 540px;
+}
+main .contacts__right .contact__form .username__form {
+  display: flex;
+  gap: 30px;
+}
+main .contacts__right .contact__form .username__form-name, main .contacts__right .contact__form .username__form-surname {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .contacts__right .contact__form .username__form-name label, main .contacts__right .contact__form .username__form-surname label {
+  font-family: "Lato", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+main .contacts__right .contact__form .username__form-name input, main .contacts__right .contact__form .username__form-surname input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 5px 0 15px;
+  width: 255px;
+  color: rgb(189, 189, 189);
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+}
+main .contacts__right .contact__form .message__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .contacts__right .contact__form .message__form label {
+  font-family: "Lato", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin-top: 35px;
+}
+main .contacts__right .contact__form .message__form textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding: 5px 0 15px;
+  width: 540px;
+  color: rgb(189, 189, 189);
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+}
+main .contacts__right .contact__form .btn {
+  margin-top: 50px;
+  margin-left: 270px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 50px 0 40px;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
