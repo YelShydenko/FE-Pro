@@ -45,7 +45,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1190px;
+    max-width: 1190px;
+    @media (max-width: 1200px) {
+      margin: 0 81px;
+    }
+    @media (max-width: 766px) {
+      padding: 19px 0;
+    }
 
     &-left {
       display: flex;
@@ -55,6 +61,11 @@ header {
         background: rgba(217, 217, 217, 1);
         width: 51px;
         height: 118px;
+      }
+      @media (max-width: 766px) {
+        .grey__box {
+          display: none;
+        }
       }
       .logo__container {
         display: flex;
@@ -77,14 +88,114 @@ header {
         font-size: 14px;
         color: $textColor;
         font-family: $additionalFont;
+        li {
+          cursor: pointer;
+        }
+      }
+      @media (max-width: 1020px) {
+        display: none;
+      }
+    }
+    // функционал бургер меню нашла в интернете, 
+    // вместо того чтобы вставить просто картинку как на фигме
+    .menu {
+      font-family: $additionalFont;
+      visibility: hidden;
+      position: absolute;
+      @media (max-width: 1020px) {
+        visibility: visible;
+        position: static;
+      }
+      .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+      }
+
+      .burger {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 50px;
+        height: 26px;
+
+        &::before,
+        &::after {
+          content: "";
+          left: 0;
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 4px;
+          border-radius: 10px;
+          background: #000;
+        }
+
+        &::before {
+          top: 0;
+          box-shadow: 0 11px 0 #000;
+          transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+        }
+
+        &::after {
+          bottom: 0;
+          transition: bottom 0.3s 0.15s, transform 0.3s;
+        }
+      }
+
+      .burger-checkbox:checked + .burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+        transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+      }
+
+      .burger-checkbox:checked + .burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom 0.3s, transform 0.3s 0.15s;
+      }
+
+      .menu-list {
+        top: 118px;
+        right: 0;
+        position: absolute;
+        display: grid;
+        gap: 12px;
+        padding: 42px 0;
+        margin: 0;
+        background: $seccondBackground;
+        list-style-type: none;
+        visibility: hidden;
+        transition: 0.3s;
+        width: 200px;
+
+        .menu-item {
+          display: block;
+          padding: 8px;
+          color: rgb(0, 0, 0);
+          font-size: 18px;
+          text-align: center;
+          text-decoration: none;
+        }
+      }
+
+      .burger-checkbox:checked ~ .menu-list {
+        visibility: visible;
       }
     }
   }
 }
 
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
+  @media (max-width: 1200px) {
+    margin: 0 81px;
+  }
 }
 
 .btn {
@@ -109,12 +220,19 @@ main {
       align-items: start;
       gap: 80px;
       margin-bottom: 70px;
+      @media (max-width: 766px) {
+        gap: 22px;
+      }
       h2 {
-        width: 589px;
+        max-width: 589px;
         font-size: 48px;
         font-family: $mainFont;
         font-weight: 700;
         color: $primaryColor;
+        @media (max-width: 766px) {
+          text-align: center;
+          max-width: 592px;
+        }
       }
     }
 
@@ -164,6 +282,10 @@ main {
   .specialize {
     background-color: $seccondBackground;
     padding: 140px 0;
+    @media (max-width: 1180px) {
+      display: flex;
+      justify-content: center;
+    }
 
     h4 {
       @include aditionalHeader();
@@ -172,6 +294,9 @@ main {
     h2 {
       @include sectionHeader();
       margin: 40px 0 102px;
+      @media (max-width: 766px) {
+        margin: 17px 0 120px;
+      }
     }
 
     &__items {
@@ -213,6 +338,22 @@ main {
         &:hover::before {
           opacity: 1;
         }
+
+        @media (max-width: 766px) {
+          background: url(../img/itemMedia.png);
+          width: 592px;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      .specialize__items {
+        grid-template-columns: repeat(2, 350px);
+        justify-content: center;
+      }
+    }
+    @media (max-width: 766px) {
+      .specialize__items {
+        grid-template-columns: 592px;
       }
     }
   }
@@ -223,6 +364,12 @@ main {
     .container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media (max-width: 1180px) {
+        justify-content: center;
+        gap: 40px;
+      }
     }
     &__info {
       h4 {
@@ -237,10 +384,13 @@ main {
         }
       }
       p {
-        width: 445px;
+        max-width: 445px;
         font-family: $additionalFont;
         font-weight: 300;
         font-size: 18px;
+        @media (max-width: 1180px) {
+          max-width: 540px;
+        }
       }
     }
 
@@ -248,13 +398,24 @@ main {
       display: grid;
       grid-template-columns: repeat(2, 255px);
       gap: 30px;
+      @media (max-width: 766px) {
+        grid-template-columns: 562px;
+        gap: 15px;
+      }
 
       &-item {
         background-color: $seccondBackground;
         width: 255px;
         height: 255px;
         padding: 30px 40px 40px;
-
+        @media (max-width: 766px) {
+          width: 562px;
+          height: 120px;
+          display: flex;
+          gap: 42.58px;
+          align-items: center;
+          justify-content: center;
+        }
         .number {
           font-family: $additionalFont;
           font-weight: 900;
@@ -266,6 +427,9 @@ main {
           font-size: 14px;
           width: 107px;
           margin: 30px 0 47px;
+          @media (max-width: 766px) {
+            margin: 0;
+          }
         }
 
         a {
@@ -290,6 +454,11 @@ main {
     background-color: $seccondBackground;
     padding: 100px 0;
     .container {
+      @media (max-width: 1180px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
       h4 {
         @include aditionalHeader();
       }
@@ -302,6 +471,21 @@ main {
       display: flex;
       gap: 30px;
       margin-bottom: 50px;
+      flex-wrap: wrap;
+      @media (max-width: 1180px) {
+        justify-content: center;
+      }
+      @media (max-width: 766px) {
+        margin-bottom: 32px;
+        img {
+          width: 481px;
+        }
+        img:nth-child(2),
+        img:nth-child(3),
+        img:nth-child(4) {
+          display: none;
+        }
+      }
     }
 
     &__nav {
@@ -362,15 +546,24 @@ main {
       background-color: $seccondBackground;
       padding: 45px 95px;
       margin-bottom: 50px;
+      @media (max-width: 766px) {
+        padding: 47px 69px;
+      }
       &-text {
         font-family: $additionalFont;
         font-size: 18px;
         margin-bottom: 58px;
+        @media (max-width: 766px) {
+          margin: 0;
+        }
       }
       &-person {
         display: flex;
         align-items: center;
         gap: 35px;
+        @media (max-width: 766px) {
+          display: none;
+        }
 
         .name {
           .fullname {
@@ -434,9 +627,24 @@ main {
     background-image: url(../img/cityPicture.png);
     background-repeat: no-repeat;
     padding: 122px 0 140px;
+    @media (max-width: 1180px) {
+      padding: 19px 0 10px;
+    }
+    @media (max-width: 766px) {
+      background-image: url(../img/cityBackgrondContact.png);
+      padding: 29px 0 135px;
+    }
     .container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: 1180px) {
+        gap: 40px;
+        justify-content: center;
+      }
+      @media (max-width: 766px) {
+        gap: 160px;
+      }
     }
     &__left {
       h2 {
@@ -451,13 +659,17 @@ main {
         color: $primaryColor;
         margin: 60px 0 79px;
         opacity: 70%;
+        @media (max-width: 1180px) {
+          margin: 44px 0 33px;
+        }
+        @media (max-width: 766px) {
+          max-width: 595px;
+        }
       }
 
       &-icons {
-        // width: 290px;
         display: flex;
         justify-content: space-between;
-        // align-items: center;
         gap: 53px;
 
         .contact__phone,
@@ -478,15 +690,19 @@ main {
     }
     &__right {
       .contact__form {
-        width: 540px;
+        max-width: 540px;
+        @media (max-width: 766px) {
+          max-width: 595px;
+        }
         .username__form {
           display: flex;
-          gap: 30px;
+          justify-content: space-between;
+
           &-name,
           &-surname {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            grid-area: 10px;
             label {
               font-family: $additionalFont;
               color: $primaryColor;
@@ -516,16 +732,19 @@ main {
           }
           textarea {
             background: none;
-              border: none;
-              border-bottom: 1px solid $primaryColor;
-              padding: 5px 0 15px;
-              width: 540px;
-              color: $sectionHeaderColor;
-              font-size: 21px;
-              font-family: $additionalFont;
+            border: none;
+            border-bottom: 1px solid $primaryColor;
+            padding: 5px 0 15px;
+            width: 540px;
+            color: $sectionHeaderColor;
+            font-size: 21px;
+            font-family: $additionalFont;
+            @media (max-width: 766px) {
+              width: 578px;
+            }
           }
         }
-        .btn{
+        .btn {
           margin-top: 50px;
           margin-left: 270px;
         }
@@ -533,11 +752,11 @@ main {
     }
   }
 }
-footer{
+footer {
   width: 100%;
   background-color: $primaryColor;
   padding: 50px 0 40px;
-  .container{
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
