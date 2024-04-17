@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: blue;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 36px;
+}
+
+.btn{
+    background-color: aliceblue;
+    border: none;
+    color: navy;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 36px;
+}
+
+.place__for-fetch{
+    background-color: blue;
+    padding: 50px;
+}
+
+.user__card{
+    background-color: aliceblue;
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.user__info{
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    color: navy;
+}
+
+.user__posts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post{
+    border: 3px solid navy;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    font-size: 28px;
+    color: navy;
+}
