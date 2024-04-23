@@ -1,0 +1,51 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.frame{
+   width: 500px;
+   height: 500px;
+   position: relative;
+   overflow: hidden;
+}
+
+.cards{
+   display: grid;
+   grid-auto-flow: column;
+   position: absolute;
+   left: 0;
+   transition: 0.5s ease-in-out;
+}
+
+.card{
+   background-size: cover;
+   background-position: center;
+   width: 500px;
+   height: 500px;
+}
+
+.triggers{
+   position: absolute;
+   z-index: 999;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.triggers button{
+   width: 50px;
+   font-size: 40px;
+   background-color: rgba(0, 0, 0, 0.5);
+   border: none;
+   color: red;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+
+.triggers button:hover{
+   opacity: 1;
+}
+
