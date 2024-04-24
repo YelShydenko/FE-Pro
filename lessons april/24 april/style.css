@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.overlay {
+  padding: 15px 0;
+  background: #d4e9f9;
+  position: relative;
+}
+
+.overlay__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.overlay__content h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.overlay__triggers {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+.overlay__triggers button {
+  background: transparent;
+  border: none;
+  color: #292929;
+  opacity: 0.8;
+}
+
+.subheader {
+  background: #f7ebe5;
+}
+
+.subheader__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.subheader ul {
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+}
+
+.subheader__right {
+  font-weight: 400;
+  display: flex;
+  gap: 30px;
+}
+
+.subheader__right-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.subheader__right-item h5 {
+  font-size: 13px;
+  font-weight: 400;
+}
+.subheader__right-item:last-child {
+  gap: 10px;
+}
+
+.header {
+  text-transform: uppercase;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+}
+.header li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.header__mobile {
+    display: none;
+    height: 100vh;
+    background: teal;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 100px;
+    gap: 50px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.burger {
+    display: none;
+    width: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.burger div {
+    width: 50px;
+    height: 2px;
+    background: black;
+}
+@media(max-width: 768px) {
+    .overlay {
+        display: none;
+    }
+    .subheader {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .active {
+        display: flex;
+    }
+    .header {
+        display: none;
+    }
+    
+}
