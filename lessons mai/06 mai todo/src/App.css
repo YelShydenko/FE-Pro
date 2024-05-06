@@ -1,0 +1,11 @@
+.L {
+  width: 430px;
+}
+
+.M {
+  width: 215px;
+}
+
+.error {
+  border: 2px solid red !important;
+}

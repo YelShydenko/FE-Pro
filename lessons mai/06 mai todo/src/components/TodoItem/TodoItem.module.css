@@ -1,0 +1,32 @@
+.todo__item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid teal;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+}
+
+.todo__item_left h4,
+.todo__item_left p {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    font-weight: normal;
+    letter-spacing: 0.4px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+.delete__todo {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid teal;
+    border-radius: 50%;
+}

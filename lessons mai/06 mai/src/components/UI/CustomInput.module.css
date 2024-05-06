@@ -1,0 +1,8 @@
+.default__input {
+    padding: 10px 20px;
+    width: 225px;
+    border: 1px solid teal;
+    background: none;
+    border-radius: 8px;
+    outline: none;
+}

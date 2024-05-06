@@ -1,0 +1,10 @@
+.input__form {
+    margin: 5px 0;
+}
+
+.default__input {
+    padding: 10px 20px;
+    border: 1px solid teal;
+    border-radius: 8px;
+    outline: none;
+}
