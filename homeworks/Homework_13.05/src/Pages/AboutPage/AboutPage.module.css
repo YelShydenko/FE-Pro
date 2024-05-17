@@ -1,0 +1,64 @@
+.about__company {
+  margin: 37px 104px;
+}
+
+.about__company h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+.company__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 104px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.instructions {
+  margin: 79px 104px;
+}
+.instructions h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.steps__container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.step {
+  display: flex;
+  gap: 20px;
+}
+
+.step span {
+  font-size: 36px;
+  font-weight: 400;
+}
+.step p {
+  font-size: 14px;
+  max-width: 205px;
+}
+
+.evaluation {
+  margin: 52px 104px;
+}
+.evaluation__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.evaluation__info__container {
+  max-width: 556px;
+}
+.evaluation__info__container h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 61px;
+}
