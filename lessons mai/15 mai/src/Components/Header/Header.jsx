@@ -1,6 +1,7 @@
 import cls from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import Subheader from "./Subheader";
 function Header() {
   return (
     <header className={cls.Header}>
@@ -25,6 +26,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <Subheader/>
     </header>
   );
 }
