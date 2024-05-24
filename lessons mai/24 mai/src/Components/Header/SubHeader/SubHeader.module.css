@@ -1,0 +1,18 @@
+.subheader{
+   border-top: 1px solid teal;
+   padding: 10px;
+   margin: 20px auto;
+   width: 800px;
+}
+
+.subheader ul {
+   list-style: none;
+   display: flex;
+   gap: 50px;
+   justify-content: center;
+}
+
+.subheader ul li a{
+   color: teal;
+   text-decoration: none;
+}

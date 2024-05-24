@@ -1,0 +1,36 @@
+.comments {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.comment__top img{
+    max-width: 50px;
+}
+
+.comment {
+    padding: 10px;
+    border: 1px solid teal;
+    border-radius: 8px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.comment p {
+    border-top: 1px solid teal;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+}
+.delete {
+  position: absolute;
+  right: -10px;
+  top: -18px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: teal;
+}
+
+.delete:hover {
+  color: black;
+  transition: 0.3s ease-out;
+}
